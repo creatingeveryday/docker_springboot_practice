@@ -19,6 +19,8 @@
 
 도커는 컨테이너 기술을 효과적으로 사용하여 소프트웨어의 개발, 배포, 실행을 단순화하는 도구입니다.
 
+또 도커 파일을 이용해서 서버의 운영기록을 코드화해서 버전관리할 수 있습니다.
+
 이 가이드에서는 도커 컨테이너의 기본 개념과 사용법에 대해 소개합니다.
 
 
@@ -239,3 +241,5 @@ CONTAINER ID   IMAGE     COMMAND                   CREATED         STATUS       
 - [docker docs](https://docs.docker.com/manuals/)
 - [docker hub](https://hub.docker.com/)
 - [docker 튜토리얼 참고](https://www.lainyzine.com/ko/article/docker-tutorial/)
+- [왜 굳이 도커를 써야하나요?](https://www.44bits.io/ko/post/why-should-i-use-docker-container)
+- [도커 입문편](https://www.44bits.io/ko/post/easy-deploy-with-docker)
