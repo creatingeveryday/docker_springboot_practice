@@ -1,0 +1,17 @@
+pluginManagement {
+    plugins {
+        id 'org.springframework.boot' version "${springBootVersion}"
+        id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+    }
+}
+
+rootProject.name = 'sample'
+
+include 'batch'
+include 'core-api'
+include 'storage'
+
+// include: 지정된 프로젝트를 빌드에 추가합니다.
+// 제공된 목록의 각 경로는 빌드에 추가할 프로젝트의 경로로 처리됨
+// 프로젝트 계층 구조는 ':' 으로 구분한다.
+
