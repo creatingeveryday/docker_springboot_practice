@@ -37,10 +37,12 @@
   - 멀티모듈 프로젝트의 경우 각 모듈의 루트 경로에 위치시키는 것이 일반적이다.
 
 ```dockerfile
-# API 서버 모듈: 도커 파일로 이미지 생성
+# syntax=docker/dockerfile:1
 
-# jdk 17을 기본 베이스 이미지로 사용
 FROM openjdk:17
+# jdk 17을 기본 베이스 이미지로 사용
+
+# API 서버 모듈: 도커 파일로 이미지 생성
 
 # 컨테이너 내에서 실행되는 명령의 작업 디렉토리를 설정
 # 컨테이너가 시작될 때의 기본 작업 디렉토리를 의미함
@@ -77,6 +79,7 @@ ENTRYPOINT ["java","-jar","/app/core-api.jar"]
   - --build-arg: 빌드 중에 Dockerfile 내에서 사용할 빌드 타임 환경 변수를 지정합니다.
   - --no-cache: 캐시를 사용하지 않고 강제로 모든 레이어를 다시 빌드합니다. 
   - --pull: 빌드하기 전에 베이스 이미지를 항상 최신으로 업데이트합니다.
+
 ```text
 # docker build [옵션] <Dockerfile 경로 또는 URL>
 docker build -t core-api-8097 .
