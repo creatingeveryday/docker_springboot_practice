@@ -1,6 +1,8 @@
-# API 서버 모듈: 도커 파일로 이미지 생성
+# syntax=docker/dockerfile:1
 
 FROM openjdk:17
+
+# API 서버 모듈: 도커 파일로 이미지 생성
 
 # 작업 디렉토리 설정
 WORKDIR /app
